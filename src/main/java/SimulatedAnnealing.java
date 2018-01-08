@@ -35,6 +35,7 @@ public class SimulatedAnnealing {
 	{
 		//Main loop of your local search algorithm. 
 		Route current=new Route(this.tsp);
+
                 Route next=null;
                 int count=0;
                 Random random = new Random();
