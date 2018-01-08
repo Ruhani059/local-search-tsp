@@ -54,8 +54,8 @@ public class SimulatedAnnealing {
                         next=OneOneExchange.apply(current);//heuristic1 1-1 exchange;
                     }
                     else {
-                        next=Or_Opt.apply(current);//heuristic2 or-opt
-                        //next=current;
+//                        next=Or_Opt.apply(current);//heuristic2 or-opt
+                        next=current;
                     }
                     delE = next.getCost()-current.getCost();
 
