@@ -54,7 +54,7 @@ public class MainClass {
 			System.out.println(x.length);
             TSP tsp = new TSP (x,y,n);
 //			tsp.print();
-            tsp.solve();
+//            tsp.solve();
         }
         catch (Exception e)
         {

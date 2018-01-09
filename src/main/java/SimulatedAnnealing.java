@@ -35,7 +35,6 @@ public class SimulatedAnnealing {
 	{
 		//Main loop of your local search algorithm. 
 		Route current=new Route(this.tsp);
-
                 Route next=null;
                 int count=0;
                 Random random = new Random();
@@ -54,8 +53,8 @@ public class SimulatedAnnealing {
                         next=OneOneExchange.apply(current);//heuristic1 1-1 exchange;
                     }
                     else {
-//                        next=Or_Opt.apply(current);//heuristic2 or-opt
-                        next=current;
+                        next=Or_Opt.apply(current);//heuristic2 or-opt
+                        //next=current;
                     }
                     delE = next.getCost()-current.getCost();
 

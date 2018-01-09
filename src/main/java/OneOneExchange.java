@@ -29,7 +29,9 @@ public class OneOneExchange {
                 route.route.add(ran2,pos1element);
                 int pos2element = route.route.remove(ran2);
                 route.route.add(ran, pos2element);
-                                
+                
+                
+
 		route.updateCost();
 		return route;
 	}
